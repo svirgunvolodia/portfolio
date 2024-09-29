@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${dm_sans.variable} ${trap.variable}`}
     >
-      <body className="relative h-screen w-screen overflow-hidden overflow-y-scroll bg-white font-body">
+      <body className="relative h-screen w-screen overflow-hidden overflow-y-scroll bg-background font-body">
         {children}
       </body>
     </html>
