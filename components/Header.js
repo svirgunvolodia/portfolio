@@ -91,15 +91,23 @@ export const Header = () => {
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-      <div className="flex flex-col gap-2">
-        <img
-          src="/images/profile.webp"
-          alt="avatar"
-          className="w-40 h-40 rounded-full object-cover"
-        />
-        <h1 className="font-title font-bold text-5xl">Volodmyr Svirhun</h1>
-        <p className="font-body text-2xl">Senior Frontend Developer</p>
-        <div className="flex flex-col gap-3 justify-start">
+      <div className="flex flex-col gap-10 lg:gap-5 justify-between h-full">
+        <div className="flex flex-col sm:flex-row gap-4">
+          <img
+            src="/images/profile.webp"
+            alt="avatar"
+            className="w-32 h-32 2xl:w-36 2xl:h-36 rounded-full object-cover"
+          />
+          <div className="flex flex-col gap-2">
+            <h3 className="font-title font-bold text-4xl tracking-tight sm:text-5xl">
+              Volodmyr <br className="hidden sm:block" /> Svirhun
+            </h3>
+            <p className="font-body text-xl 2xl:text-2xl">
+              Senior Frontend Developer
+            </p>
+          </div>
+        </div>
+        <div className="lg:flex flex-col gap-3 justify-start hidden">
           <HeaderButton
             text="About"
             iconName="CircleUser"
@@ -118,6 +126,28 @@ export const Header = () => {
             isActive={selectedSection === SECTIONS.ARTICLES}
             onClick={() => scrollToSection(SECTIONS.ARTICLES)}
           />
+        </div>
+        <div className="flex gap-3">
+          <a
+            href="https://www.linkedin.com/in/svirgunvolodia/"
+            className="hover:text-skyBlue w-fit block"
+            target="blank"
+          >
+            <Icon name="Linkedin" size="24" />
+          </a>
+          <a
+            href="https://github.com/svirgunvolodia"
+            className="hover:text-skyBlue w-fit block"
+            target="blank"
+          >
+            <Icon name="Github" size="24" />
+          </a>
+          <a
+            href="mailto:svirgun200@gmail.com"
+            className="hover:text-skyBlue w-fit block"
+          >
+            <Icon name="Mail" size="24" />
+          </a>
         </div>
       </div>
     </header>
