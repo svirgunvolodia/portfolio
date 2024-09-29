@@ -6,9 +6,15 @@ export default function Home() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <Header />
         <main className="pt-24 lg:w-1/2 lg:py-24">
-          <p className="h-96">About</p>
-          <p className="h-96">Experience</p>
-          <p className="h-96">Articles</p>
+          <section id="about" className="h-96">
+            About
+          </section>
+          <section id="experience" className="h-96">
+            Experience
+          </section>
+          <section id="articles" className="h-96">
+            Articles
+          </section>
         </main>
       </div>
     </div>
