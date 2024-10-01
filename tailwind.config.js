@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         background: "#DFEBF6",
         skyBlue: "#698caf",
+        lightBlue: "#B1DFF6",
         oceanBlue: "#4242FA",
       },
       transitionProperty: {

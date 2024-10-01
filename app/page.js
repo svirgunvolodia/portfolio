@@ -1,6 +1,7 @@
+import { ExperienceSection } from "~/components/ExperienceSection";
 import { Header } from "~/components/Header";
 
-const About = () => {
+const AboutSectoin = () => {
   return (
     <section
       id="about"
@@ -57,13 +58,9 @@ export default function Home() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <Header />
         <main className="pt-24 lg:w-1/2 lg:py-24">
-          <About />
-          <section id="experience" className="h-96">
-            Experience
-          </section>
-          <section id="articles" className="h-96">
-            Articles
-          </section>
+          <AboutSectoin />
+          <ExperienceSection />
+          <section id="articles" className="h-96"></section>
         </main>
       </div>
     </div>
